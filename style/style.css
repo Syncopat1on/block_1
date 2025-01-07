@@ -153,7 +153,7 @@ body {
   min-width: 288px;
   max-width: 490px;
   padding-left:24px;
-  width: 45%; 
+  width: 50%; 
 }
 .text_img {
   border-radius: 10px;
@@ -174,9 +174,6 @@ body {
    .hd, .hr_1 {
     display: none;
   }
-  .text_2 {
-    display: none;
-  }
   .text_img {
     width: 360px;
     height: 260px;
@@ -191,6 +188,9 @@ body {
 @media only screen and (max-width: 680px) {
   .text_title {
     flex-wrap: wrap;
+  }
+  .text_2 {
+    display: none;
   }
 }
 @media only screen and (min-width:400px) and (max-width:769px) {
