@@ -87,8 +87,8 @@ body {
 .nav__group {
   display:flex;
   flex-wrap: nowrap;
-  padding-right: 22px;
-  padding-left:22px;
+  padding-right: 11px;
+  padding-left: 11px;
   margin: 0;
   overflow-x: scroll;
   scrollbar-width: none;
@@ -106,7 +106,7 @@ body {
 .nav__group-items a:focus {
   outline: none; 
   background-color: white; 
-  border: 2px solid #B8FFEC;
+  border: 2px solid  #B8FFEC;
   border-radius: 6px;
   padding-left:12px;
   padding-right: 12px;
@@ -158,6 +158,7 @@ body {
 .text_img {
   border-radius: 10px;
   width: 100%;
+  height: 100%;
 }
 @media only screen and (min-width: 1120px) {
   header { 
@@ -165,9 +166,9 @@ body {
  }
  .title-adition { 
   display: flex;
+ }
 }
-}
-@media only screen and (max-width: 320px) { 
+@media only screen and (max-width: 768px) { 
    .hd, .hr_1 {
     display: none;
   }
@@ -177,11 +178,10 @@ body {
   .text_img {
     border-radius: 0px;
   }
-}
-@media only screen and (max-width: 768px) { 
   .text_3 {
-   display: none;
- }
+    display: none;
+  }
+}
  .text_main-img {
   width: 360px;
   height: 208px; 
@@ -189,9 +189,9 @@ body {
  .text_title__container {
   width: 45%;
  }
-}
 @media only screen and (max-width: 680px) {
   .text_title {
     flex-wrap: wrap;
+    width: 100%;
   }
 }
