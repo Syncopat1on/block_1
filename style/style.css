@@ -94,11 +94,12 @@ body {
   scrollbar-width: none;
 }
 .nav__group-items {
-  display: inline;
   padding-top:8px;
   padding-bottom: 8px;
-  padding-right: 21px;
-  padding-left: 21px;
+  margin-right: 21px;
+}
+.nav__group-items:nth-child(1) {
+  padding-left:21px;
 }
 .nav__group-items,  a:hover {
   color:  rgb(80, 76, 76);
@@ -108,15 +109,12 @@ body {
   background-color: white; 
   border: 2px solid  #B8FFEC;
   border-radius: 6px;
-  padding-left:12px;
-  padding-right: 12px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding: 5px 12px;
 }
           /* Для имитации того, что только один элемент выбран */
 .nav__group-items  a:focus-visible {
   border: 2px solid  #B8FFEC;
-  padding: 8px 15px;
+  padding: 5px 12px;
 }
           /*Конец навигационного меню*/
           /*Основной фон*/
@@ -158,6 +156,14 @@ body {
 .text_img {
   border-radius: 10px;
   padding-right: 25px;
+}
+.anim:active {
+  transform: scale(1.2)  rotate(-5deg);
+  transition:transform 0.2s;
+}
+.more_img:active {
+  transform: rotate(-180deg);
+  transition:transform 0.2s;
 }
 @media only screen and (min-width: 1120px) {
   header { 
@@ -203,7 +209,7 @@ body {
     width: 320px;
     height: 230px;
     border-radius: 0px;
-    padding-right: 0px;
+    padding-right: 0;
   }
 }
 @media only screen and (min-width:769px)  {
